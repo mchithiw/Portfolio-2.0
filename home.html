@@ -1,0 +1,72 @@
+<div class="about-me">
+    
+     <h1 class="category-title"> Who Am I? </h1>
+    
+    <div class="row">
+        
+        <div class="about-container twelve columns">
+            <p> Hello, I'm Mehtab Chithiwala. I'm a software developer from Atlanta and currently work for <a href="http://www.ncr.com"> NCR </a>. I graduated from SPSU in 2015 and have interned at Home Depot and Georgia Pacific. I am particularly interested in web development and most of my personal projects are based around the web. In my free time, I enjoy watching sports, volunteering around the community, catching up on my favorite TV shows, and spending time with my family and friends. Feel free to connect with me! </p>
+    
+            <div class="social-container">
+
+                <ul class="social-list">
+                    <li ng-repeat="item in social" class="social-icon"><a href="{{item.link}}"><img ng-mouseover="socialHover($index)" ng-mouseleave="socialHoverOff($index)" class="social-img" ng-src="content/images/{{item.name}}" alt="Contact me"/></a></li>
+                </ul>
+
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div class="projects">
+    
+    <h1 class="category-title"> Projects </h1>
+    
+    <div class="row">
+        <div class="project-container twleve columns">
+            
+            <div ng-click="goTo(item.url)" ng-mouseover="hover($index)" ng-mouseleave="hoverOff($index)" class="project" ng-repeat="item in projects">
+                <div class="project-span"> 
+                    <h2 class="project-name"> 
+                        {{item.name}} 
+                    </h2> 
+                    
+                    <!--<button ng-click="goTo(item.url)" class="project-button button"> View Project </button>-->
+                    
+                </div>
+                
+                <div ng-hide="item.hover" class="project-image" ng-style="{'background-image': 'url({{ item.background }})'}">
+                
+                </div>
+                
+                <div ng-show="item.hover" class="project-content">
+                    <p> {{item.description}} </p>
+                    <p> 
+                        Made with: 
+                        <span class="project-tech"> 
+                            {{item.how}} 
+                        </span>
+                    </p>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+<div class="resume">
+    
+    <h1 class="category-title"> Resume </h1>
+    
+    <div class="row">
+        
+        <div class="six-columns">
+        
+        </div>
+        
+    </div>
+</div>

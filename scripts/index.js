@@ -76,8 +76,8 @@ app.controller("homeController", function($scope, $location, $http) {
             description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
             how: 'Angular.js, Skeleton.css, PHP, & MySQL.',
             url: 'http://www.chithiwala.me',
-            background: "/content/images/bear2.jpg",
-            imageOn:  "/content/images/bear2.jpg",
+            background: "content/images/cali2.jpg",
+            imageOn:  "content/images/cali2.jpg",
             imageOff: ""
         },
         {
@@ -112,8 +112,8 @@ app.controller("homeController", function($scope, $location, $http) {
             description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
             how: 'Angular.js, Skeleton.css, PHP, & MySQL.',
             url: 'http://www.chithiwala.me',
-            background: "/content/images/bear2.jpg",
-            imageOn:  "/content/images/bear2.jpg",
+            background: "content/images/bear.jpg",
+            imageOn:  "content/images/bear.jpg",
             imageOff: ""
         },
         {

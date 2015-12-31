@@ -8,7 +8,7 @@ html {
 }
 
 .container{
-    
+    min-width: 100%;  
 }
 
 .category-title{
@@ -35,7 +35,8 @@ html {
 
 .sub-title{
     font-size: 1.2em;
-    color: black;
+    color: #0093ff;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     margin-top: 10px;
@@ -53,12 +54,16 @@ html {
     display: inline;
     margin: 5px;
     font-size: 1.25em;
-    color: #0093ff;
+    color: black;
 }
 
 .nav li:hover{
     cursor: pointer;
     border-bottom: 1px solid #0093ff;
+    color: #0093ff;
+}
+
+.fixed-nav li:hover{
     color: black;
 }
 
@@ -90,7 +95,11 @@ html {
 /*project */
 
 .projects{
-    margin: 20px 0px;
+    margin: 10px 0px;
+    width: 98%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-top: 0px;
 }
 
 .project-container{
@@ -105,7 +114,7 @@ html {
     color: black;
     padding: 20px;
     margin: 20px;
-    width: 35%;
+    width: 26%;
     height: auto;
     border-radius: 5px;
 }
@@ -157,21 +166,34 @@ html {
 /* About Me */
 
 .about-me{
-    margin: 20px;
-    padding: 20px;
+    padding: 30px 20px;
+    background-color: #4dacf0;
+    color: black;
+    margin: 0px;
+}
+
+.about-me .category-title{
+    color: black;
 }
 
 .about-container{
     color: white;
+    text-align: left;
 }
 
-.about-container a{
-    text-decoration: none;
+.about-container p{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
 .social-container{
     text-align: center;
     margin-top: 20px;
+}
+
+.social-list{
+    margin-bottom: 10px;
 }
 
 .social-icon{
@@ -190,7 +212,106 @@ html {
     cursor: pointer;
 }
 
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Resume */
+
+.resume{
+    color: black;
+    background-color: white;
+    padding: 30px 50px;
+}
+
+.resume-button{
+    background-color: #0093ff;
+    color: white;
+}
+
+.resume-category-title{
+    margin: 25px 0px;
+}
+
+.resume-category-title{
+    border-bottom: 1px solid #0093ff;
+}
+
+.resume-line{
+    margin: 10px 0px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.blue{
+    color: #0093ff;
+    font-weight: bold;
+}
+
+.job-title{
+    font-size: 1.35em;
+}
+
+.little-title{
+    font-size: .85em;
+}
+
+.job{
+    width: 75%;
+}
+
+.skills p{
+    margin: 10px 0px;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+.experience li{
+    font-size: 1.1em;
+}
+
 @media (max-width: 800px){
+    
+    .container{
+        margin: 0px;
+        width: 100%;
+    }
+    
+    p{
+        font-size: 1em;
+    }
+
+    .experience li{
+        font-size: 1em;
+    }
+    
+    .main-nav ul{
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
     
     .fixed-nav ul{
         padding: 5px;
@@ -211,6 +332,10 @@ html {
         margin-top: 20px;
     }
     
+    .projects .category-title{
+        padding-bottom: 10px;
+    }
+    
     .social-icon{
         margin: 8px;
     }
@@ -222,10 +347,43 @@ html {
     
     .about-me{
         padding: 5px;
-        margin: 5px;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-top: 25px;
+    }
+    
+    .about-container p{
+        width: 90%;
+    }
+    
+    .job{
+        width: 100%;
+    }
+    
+    .resume{
+        padding: 15px;
+        padding-top: 25px;
+    }
+    
+    .projects{
+        padding-top: 20px;
     }
 
     
+}
+
+@media (max-width: 550px) {
+    
+    .container{
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .project{
+        padding: 10px 15px;
+    }
+
 }
 
 

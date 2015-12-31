@@ -26,7 +26,15 @@ app.controller("navController", function($scope, $location, $http) {
         var dist = $(location).offset().top;
         //var temp = $(".fixed-header").outerHeight();
         
-        var result = dist;
+        if ($(window).outerWidth() <= 800)
+            var temp = 34;
+        else
+            var temp = 50;
+        
+        var result = dist - temp;
+        
+        if (result < 0)
+            result = dist;
         
         $('html, body').animate({
             scrollTop: result
@@ -35,7 +43,7 @@ app.controller("navController", function($scope, $location, $http) {
     
     $(window).scroll(function() {
     
-        var pos = $(".header").offset().top + $(".header").outerHeight();
+        var pos = $(".main-nav ul li").offset().top;
         
         if ($(window).scrollTop() > pos)
         {
@@ -45,9 +53,18 @@ app.controller("navController", function($scope, $location, $http) {
         
         $scope.$apply();
         
+    });
+    
+    $(function(){
         
+      $(".sub-title").typed({
+        strings: ["Software Developer", "Web Developer", "Falcons Fan", "Software Developer"],
+        typeSpeed: 50
+      });
         
-    });    
+      $scope.$apply();
+    
+  });
     
 });
 
@@ -89,7 +106,25 @@ app.controller("homeController", function($scope, $location, $http) {
             background: "content/images/currency.jpg",
             imageOn: "content/images/currency.jpg",
             imageOff: ""
-        }   
+        },
+        {
+            name: 'Placeholder',
+            description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
+            how: 'Angular.js, Skeleton.css, PHP, & MySQL.',
+            url: 'http://www.chithiwala.me',
+            background: "/content/images/bear.jpg",
+            imageOn:  "/content/images/bear.jpg",
+            imageOff: ""
+        },
+        {
+            name: 'Placeholder',
+            description: 'A web application that lets users look up movies and TV shows, view trailers, ratings, descriptions, and also check what movies are playing in theaters.',
+            how: 'Angular.js, Skeleton.css, TheMovieDB API, & OMDB API.',
+            url: 'http://www.mehtabc.com/movies',
+            background: "content/images/bear2.jpg",
+            imageOn: "content/images/bear2.jpg",
+            imageOff: ""
+        }
     ];
     
     $scope.social = [
@@ -97,6 +132,29 @@ app.controller("homeController", function($scope, $location, $http) {
         {name: 'githubw.png', link: 'http://www.github.com/mchithiw'},
         {name: 'linkedinw.png', link: 'http://www.linkedin.com/in/mehtab94'},
         {name: 'emailw.png', link: 'mailto:mehtab94@gmail.com'}
+    ];
+    
+    $scope.skills = ['Java', 'Javascript', 'CSS', 'HTML', 'Angular.js', 'SQL', 'C++', 'Skeleton.css', 'Meteor.js'];
+    
+    $scope.experience = [
+        {
+            title: 'Software Developer Intern',
+            company: 'The Home Depot',
+            startDate: 'May 2015',
+            endDate: 'Present',
+            madeWith: 'Java, HTML5, CSS3, Javascript, jQuery, & Tomcat.',
+            bulletOne: 'Developed a dashboard web application to be used by the Credit Team as a constant monitoring system. The dashboard also includes the ability to make changes in real time for time sensitive processes.',
+            bulletTwo: 'The dashboard automates various processes and provides a seamless experience for the Credit Team. The automation and speed of the new dashboard makes it 33 times faster to use than the previous solution.'
+        },
+        {
+            title: 'Software Engineer Intern',
+            company: 'Georgia Pacific',
+            startDate: 'Nov 2014',
+            endDate: 'May 2015',
+            madeWith: 'HTML5, CSS3, Javascript, jQuery, HighCharts.',
+            bulletOne: 'Created a website for the EDI team to track statistics and traffic of all documents flowing inbound and outbound from the company. Took the project from requirements/design to deployment.',
+            bulletTwo: 'Utilized the HighCharts plugin to display interactive 3D graphs and analysis of various data sets in the browser.'
+        }
     ];
     
     $scope.goTo = function(url) {
@@ -136,6 +194,7 @@ app.controller("homeController", function($scope, $location, $http) {
         $scope.social[index].name = temp;
         
     }
+
     
 });
 

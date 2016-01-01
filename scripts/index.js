@@ -108,12 +108,12 @@ app.controller("homeController", function($scope, $location, $http) {
             imageOff: ""
         },
         {
-            name: 'Placeholder',
-            description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
-            how: 'Angular.js, Skeleton.css, PHP, & MySQL.',
-            url: 'http://www.chithiwala.me',
-            background: "content/images/bear.jpg",
-            imageOn:  "content/images/bear.jpg",
+            name: 'Hazy Colors',
+            description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',
+            how: 'Angular.js, jQuery, HTML, & CSS.',
+            url: 'http://www.mehtabc.com/hazy',
+            background: "content/images/colors.jpg",
+            imageOn:  "content/images/colors.jpg",
             imageOff: ""
         },
         {

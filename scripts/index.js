@@ -74,7 +74,7 @@ app.controller("homeController", function($scope, $location, $http) {
         {
             name: 'Ikra',
             description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
-            how: 'Angular.js, Skeleton.css, PHP, & MySQL.',
+            how: 'Angular.js, PHP, MySQL & Skeleton.css.',
             url: 'http://www.chithiwala.me',
             background: "content/images/cali2.jpg",
             imageOn:  "content/images/cali2.jpg",
@@ -83,7 +83,7 @@ app.controller("homeController", function($scope, $location, $http) {
         {
             name: 'Mmdb',
             description: 'A web application that lets users look up movies and TV shows, view trailers, ratings, descriptions, and also check what movies are playing in theaters.',
-            how: 'Angular.js, Skeleton.css, TheMovieDB API, & OMDB API.',
+            how: 'Angular.js, TheMovieDB API, OMDB API & Skeleton.css.',
             url: 'http://www.mehtabc.com/movies',
             background: "content/images/movie.jpg",
             imageOn: "content/images/movie.jpg",
@@ -110,19 +110,10 @@ app.controller("homeController", function($scope, $location, $http) {
         {
             name: 'Hazy Colors',
             description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',
-            how: 'Angular.js, jQuery, HTML, & CSS.',
+            how: 'Angular.js, jQuery, HTML5, & CSS3.',
             url: 'http://www.mehtabc.com/hazy',
             background: "content/images/colors.jpg",
             imageOn:  "content/images/colors.jpg",
-            imageOff: ""
-        },
-        {
-            name: 'Placeholder',
-            description: 'A web application that lets users look up movies and TV shows, view trailers, ratings, descriptions, and also check what movies are playing in theaters.',
-            how: 'Angular.js, Skeleton.css, TheMovieDB API, & OMDB API.',
-            url: 'http://www.mehtabc.com/movies',
-            background: "content/images/bear2.jpg",
-            imageOn: "content/images/bear2.jpg",
             imageOff: ""
         }
     ];
@@ -141,7 +132,7 @@ app.controller("homeController", function($scope, $location, $http) {
             title: 'Software Developer Intern',
             company: 'The Home Depot',
             startDate: 'May 2015',
-            endDate: 'Present',
+            endDate: 'Dec 2015',
             madeWith: 'Java, HTML5, CSS3, Javascript, jQuery, & Tomcat.',
             bulletOne: 'Developed a dashboard web application to be used by the Credit Team as a constant monitoring system. The dashboard also includes the ability to make changes in real time for time sensitive processes.',
             bulletTwo: 'The dashboard automates various processes and provides a seamless experience for the Credit Team. The automation and speed of the new dashboard makes it 33 times faster to use than the previous solution.'

@@ -84,7 +84,7 @@ app.controller("homeController", function($scope, $location, $http) {
             name: 'Mmdb',
             description: 'A web application that lets users look up movies and TV shows, view trailers, ratings, descriptions, and also check what movies are playing in theaters.',
             how: 'Angular.js, TheMovieDB API, OMDB API & Skeleton.css.',
-            url: 'http://www.mehtabc.com/movies',
+            url: 'http://www.mehtabc.me/movies',
             background: "content/images/movie.jpg",
             imageOn: "content/images/movie.jpg",
             imageOff: ""
@@ -93,7 +93,7 @@ app.controller("homeController", function($scope, $location, $http) {
             name: 'Color Clock',
             description: 'A simple website that shows the corresponding color to the current time. Use it as a dynamic background!',
             how: 'HTML5, CSS3, & jQuery.',
-            url: 'http://www.mehtabc.com/clock',
+            url: 'http://www.mehtabc.me/clock',
             background: "content/images/color-clock.jpg",
             imageOn: "content/images/color-clock.jpg",
             imageOff: ""
@@ -102,7 +102,7 @@ app.controller("homeController", function($scope, $location, $http) {
             name: 'Currencer',
             description: 'A basic currency converter that allows the user to convert between and view real-time rates for up to 165 countries.',
             how: 'HTML5, CSS3, jQuery, & openCurrency API.',
-            url: 'http://www.mehtabc.com/currency',
+            url: 'http://www.mehtabc.me/currency',
             background: "content/images/currency.jpg",
             imageOn: "content/images/currency.jpg",
             imageOff: ""
@@ -111,7 +111,7 @@ app.controller("homeController", function($scope, $location, $http) {
             name: 'Hazy Colors',
             description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',
             how: 'Angular.js, jQuery, HTML5, & CSS3.',
-            url: 'http://www.mehtabc.com/hazy',
+            url: 'http://www.mehtabc.me/hazy',
             background: "content/images/colors.jpg",
             imageOn:  "content/images/colors.jpg",
             imageOff: ""

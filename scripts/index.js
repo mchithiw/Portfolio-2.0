@@ -75,7 +75,7 @@ app.controller("homeController", function($scope, $location, $http) {
             name: 'Ikra',
             description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
             how: 'Angular.js, PHP, MySQL & Skeleton.css.',
-            url: 'http://www.chithiwala.me',
+            url: 'http://www.explorethequran.tk',
             background: "content/images/cali2.jpg",
             imageOn:  "content/images/cali2.jpg",
             imageOff: ""

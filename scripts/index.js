@@ -125,7 +125,7 @@ app.controller("homeController", function($scope, $location, $http) {
         {name: 'emailw.png', link: 'mailto:mehtab94@gmail.com'}
     ];
     
-    $scope.skills = ['Java', 'C#', 'ASP.NET' 'Javascript', 'CSS', 'HTML', 'Angular.js', 'React.js', 'SQL', 'Skeleton.css', 'Meteor.js'];
+    $scope.skills = ['Java', 'C#', 'ASP.NET', 'Javascript', 'CSS', 'HTML', 'Angular.js', 'React.js', 'SQL', 'Skeleton.css', 'Meteor.js'];
     
     $scope.experience = [
     	{

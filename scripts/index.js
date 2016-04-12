@@ -125,9 +125,18 @@ app.controller("homeController", function($scope, $location, $http) {
         {name: 'emailw.png', link: 'mailto:mehtab94@gmail.com'}
     ];
     
-    $scope.skills = ['Java', 'Javascript', 'CSS', 'HTML', 'Angular.js', 'SQL', 'C++', 'Skeleton.css', 'Meteor.js'];
+    $scope.skills = ['Java', 'C#', 'ASP.NET' 'Javascript', 'CSS', 'HTML', 'Angular.js', 'React.js', 'SQL', 'Skeleton.css', 'Meteor.js'];
     
     $scope.experience = [
+    	{
+            title: 'Software Developer',
+            company: 'NCR',
+            startDate: 'February 2016',
+            endDate: 'Present',
+            madeWith: 'C#, ASP.NET MVC, HTML5, CSS3, React.js, jQuery.',
+            bulletOne: 'Working on the Online Ordering team to provide new features and improve existing functionalities of the Online Ordering web/mobile platform.',
+            bulletTwo: 'Focus mostly on creating APIs on the services team which are consumed by our Mobile and Web/Mobile-Web Platforms. Also add front-end client facing features to the Web/Mobile-Web platforms.'
+        },
         {
             title: 'Software Developer Intern',
             company: 'The Home Depot',

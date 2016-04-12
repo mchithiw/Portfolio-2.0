@@ -98,7 +98,7 @@ app.controller("homeController", function($scope, $location, $http) {
             imageOn: "content/images/color-clock.jpg",
             imageOff: ""
         },
-        {
+        /*{
             name: 'Currencer',
             description: 'A basic currency converter that allows the user to convert between and view real-time rates for up to 165 countries.',
             how: 'HTML5, CSS3, jQuery, & openCurrency API.',
@@ -106,7 +106,7 @@ app.controller("homeController", function($scope, $location, $http) {
             background: "content/images/currency.jpg",
             imageOn: "content/images/currency.jpg",
             imageOff: ""
-        },
+        },*/
         {
             name: 'Hazy Colors',
             description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',

@@ -72,21 +72,30 @@ app.controller("homeController", function($scope, $location, $http) {
     
     $scope.projects = [
         {
-            name: 'Ikra',
-            description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras.',
-            how: 'Angular.js, PHP, MySQL & Skeleton.css.',
-            url: 'http://www.explorethequran.tk',
-            background: "content/images/cali2.jpg",
-            imageOn:  "content/images/cali2.jpg",
-            imageOff: ""
-        },
-        {
             name: 'Mmdb',
             description: 'A web application that lets users look up movies and TV shows, view trailers, ratings, descriptions, and also check what movies are playing in theaters.',
             how: 'Angular.js, TheMovieDB API, OMDB API & Skeleton.css.',
             url: 'http://www.mehtabc.me/movies',
             background: "content/images/movie.jpg",
             imageOn: "content/images/movie.jpg",
+            imageOff: ""
+        },
+        {
+            name: 'Ikra',
+            description: 'A web application that allows users to search the Quran for quick reference, read, and listen to specific ayats or complete suras. Note: This app is currently not hosted online, but can be cloned from my GitHub.',
+            how: 'Angular.js, PHP, MySQL & Skeleton.css.',
+            url: 'http://www.mehtabc.me',
+            background: "content/images/cali2.jpg",
+            imageOn:  "content/images/cali2.jpg",
+            imageOff: ""
+        },
+        {
+            name: 'Hazy Colors',
+            description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',
+            how: 'Angular.js, jQuery, HTML5, & CSS3.',
+            url: 'http://www.mehtabc.me/hazy',
+            background: "content/images/colors.jpg",
+            imageOn:  "content/images/colors.jpg",
             imageOff: ""
         },
         {
@@ -107,15 +116,6 @@ app.controller("homeController", function($scope, $location, $http) {
             imageOn: "content/images/currency.jpg",
             imageOff: ""
         },*/
-        {
-            name: 'Hazy Colors',
-            description: 'A game based on how confusing colors can be. Navigate the confusion and pick the correct colors. How quick can you think?',
-            how: 'Angular.js, jQuery, HTML5, & CSS3.',
-            url: 'http://www.mehtabc.me/hazy',
-            background: "content/images/colors.jpg",
-            imageOn:  "content/images/colors.jpg",
-            imageOff: ""
-        }
     ];
     
     $scope.social = [
@@ -125,7 +125,7 @@ app.controller("homeController", function($scope, $location, $http) {
         {name: 'emailw.png', link: 'mailto:mehtab94@gmail.com'}
     ];
     
-    $scope.skills = ['Java', 'C#', 'ASP.NET', 'Javascript', 'CSS', 'HTML', 'Angular.js', 'React.js', 'SQL', 'Skeleton.css', 'Meteor.js'];
+    $scope.skills = ['Java', 'C#', 'Node.js', 'React.js', 'ASP.NET', 'Javascript', 'CSS', 'HTML', 'Angular.js', 'SQL', 'Skeleton.css', 'Meteor.js'];
     
     $scope.experience = [
     	{
@@ -133,8 +133,8 @@ app.controller("homeController", function($scope, $location, $http) {
             company: 'NCR',
             startDate: 'February 2016',
             endDate: 'Present',
-            madeWith: 'C#, ASP.NET MVC, HTML5, CSS3, React.js, jQuery.',
-            bulletOne: 'Working on the Online Ordering team to provide new features and improve existing functionalities of the Online Ordering web/mobile platform.',
+            madeWith: 'C#, React.js, Node.js, ASP.NET MVC, HTML5, CSS3, jQuery.',
+            bulletOne: 'Working on the Online Ordering team to provide new features and improve existing functionalities of the Online Ordering web/mobile platform. Develop highly scalable and performant features, since the application is used by over 200 companies and processes around 100,000 orders every day.',
             bulletTwo: 'Focus mostly on creating APIs on the services team which are consumed by our Mobile and Web/Mobile-Web Platforms. Also add front-end client facing features to the Web/Mobile-Web platforms.'
         },
         {
